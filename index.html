@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>app5</title>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+</head>
+<body>
+    <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Mensaje</h1>  
+   </div>  
+    
+    <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>Mensaje</h1>
+     <div>
+     <h1>Ingresa tu nombre</h1>
+     <input id="demo" type="text">
+<button type="button" onClick="validar()"> Enviar </button>
+<script>
+function validar()
+{
+	var x=document.getElementById("demo").value
+	if(x==""||isNaN(x)) // si es un no numero
+	{
+		alert("hola   "+x)
+	}
+	else
+	{
+		alert("Ingresa letras")
+	}
+}
+	</script>
+    <br>
+  </div>
+     </div>
+     </div>
+      <div data-role="footer" data-theme="a">
+         <h4>Aplicacion cinco, Rodrigo Dorado Gutierrez</h4>
+      </div>
+     </div>
+</div> 
+
+</body>
+</html>
